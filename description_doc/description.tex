@@ -1,0 +1,85 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{hyperref}
+
+\renewcommand{\thefootnote}{\arabic{footnote}}
+
+\title{DROit - Final Assignment}
+\author{Lilou Alidor\footnote{lilou@uni-bremen.de}, Pauline Gobé\footnote{pagobe@uni-bremen.de}, Nele Reichert\footnote{reichern@uni-bremen.de} }
+
+\begin{document}
+
+\maketitle
+
+\section{Description of the app}
+
+\paragraph{Design}
+The design for the app was taken from the initial prototype presented during the first assignment and the screens were built in accordance to this. 
+
+\paragraph{Screens and Functionalities}
+When starting up the app for the first time, one is met with the login screen. Here, a user with an existing account can login using their email and password, and a new user can sign up for a new account. 
+
+After a successful login/signup, the user is navigated to the home screen. The home screen shows an overview over all previous chats that the user is involved in. 
+When clicking on the conversation, the user is navigated to the chat screen. When clicking on the users own profile picture, the user is navigated to its own profile screen. When clicking on the plus symbol, the user can start a new chat. 
+
+In the chat screen, all the previous messages between the user and the selected friend are shown. When clicking on the profile picture of the friend, the user is navigated to their profile screen. At the bottom, the user can send a new image to the friend. When clicking on this button, the user is navigated to the draw screen.
+
+In the profile screen of the user, the user can edit their profile picture and their username (in which case they are navigated to the draw screen). The user can also view their old profile pictures and log out.
+In the profile screen of a friend, all the shared pictures can be seen and the conversation with the friend can be deleted. 
+
+In the draw screen, the user can choose between a pen, an eraser and an eyedropper. For the pen and eraser, a different color and width can be chosen. When accessed from the chat screen, the user can then send the image, and a push notification will be send to the friend (see notes below).
+
+\paragraph{Data Storage}
+All the main data (images, user data, etc.) is stored in a firebase instance. Additionally, temporary data that only has to be shared between the different screens during runtime (e.g. currently selected friend) is stored in a local realm instance. 
+
+
+\paragraph{User Experience} % TODO correct word? 
+For a better experience while using the app, there are loading screens/animations/ indicators at points at which a longer loading time can be expected, e.g. the opening of the app, logging in and opening an existing chat. 
+There are also little messages of encouragement to write the first message in an empty chat, start a first chat in a new account, or change your profile picture and username after the first sign up. 
+
+\section{Share of Work}
+In the following, it will be briefly listed who mainly worked on which parts of the app. 
+
+\paragraph{Lilou}
+\begin{itemize}
+\item Drawing functionality
+\item Dialog between model (DB) and view (UI)
+\item UI functionalities
+\item Loading screen (at beginning of app)
+\item Login screen
+\item Routes settings
+\item Debugging
+
+\end{itemize} 
+
+\paragraph{Pauline}
+\begin{itemize}
+\item Figma prototype
+\item Design of the app 
+\item Chat screen 
+\item Profiles screen 
+\item Home screen 
+\item Responsiveness
+\end{itemize}
+
+\paragraph{Nele}
+\begin{itemize}
+\item DB config and indices for firebase
+\item DB config for realm
+\item App icon
+\item Push notifications
+\item User authentication
+\item Loading indicator (in chat screen)
+\end{itemize}
+
+\section{Notes on Testing}
+The app was developed for both android and iOS, and should work on all devices. However, due to the phone that was available to us, it has mainly been tested for iOS, specificly on an iPhone 15 Pro Max.
+
+The only functionality that is platform specific are the push notifications. As discussed during the check-up, setting up an iPhone to receive custom push notifications requires access to an apple developer account, which we were not able to afford. Therefore, while the main app should be tested on iOS, push notifications should be tested on an android phone (e.g. the Google Pixel 3A).  
+
+For testing purposes, a dummy account filled with previous conversations has been created. It can be accessed under the following credentials: \\
+email address: mobile@app.dev \\
+password: 1234
+
+\end{document}

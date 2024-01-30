@@ -1,0 +1,52 @@
+name: droit_app
+description: "An app to chat with drawings."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^6.1.0
+  flutter_login: ^5.0.0
+  chat_bubbles: ^1.5.0
+  flutter_drawing_board:
+    git:
+      url: https://github.com/poupsipoups/flutter_drawing_board
+  cupertino_icons: ^1.0.6
+  hsv_color_pickers: ^0.3.0
+  firebase_core: ^2.24.2
+  cloud_firestore: ^4.13.6
+  eye_dropper: ^0.0.2
+  realm: ^1.6.1
+  firebase_messaging: ^14.7.10
+  flutter_local_notifications: ^16.3.0
+  googleapis: ^12.0.0
+  dio: ^5.4.0
+  googleapis_auth: ^1.4.1
+  flutter_spinkit: ^5.2.0
+  flutter_launcher_icons: ^0.13.1
+  insta_image_viewer: ^1.0.2
+  loading_indicator: ^3.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/app_icon.png"
+  remove_alpha_ios: true
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/flower.jpeg
+    - assets/draw-home.png
+    - google_fonts/Pangolin.ttf
+    - assets/images/

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "467709715979",
+    "firebase_url": "https://droit-7920d-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "droit-7920d",
+    "storage_bucket": "droit-7920d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467709715979:android:a03417bb5870c6f849c90e",
+        "android_client_info": {
+          "package_name": "com.example.droit_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_OTbXqRjUHLbfSsn4PLOUgNXCGPySHws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
