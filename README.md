@@ -20,7 +20,7 @@ Unfortunately, as I'm not the only author for this project, we aren't open for c
 ## Authors
 We were three on the project :
 Lilou ALIDOR (me),
-Pauline GOBÉ,
+[Pauline GOBÉ](https://github.com/poupsipoups),
 Nele REICHERT
 
 ## Project status
